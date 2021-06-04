@@ -8,8 +8,6 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +17,10 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.doku.sdkocov2.BaseDokuWalletActivity;
 import com.doku.sdkocov2.DirectSDK;
 import com.doku.sdkocov2.R;
@@ -31,9 +33,11 @@ import com.doku.sdkocov2.utils.Constants;
 import com.doku.sdkocov2.utils.CustomEditText;
 import com.doku.sdkocov2.utils.SDKConnections;
 import com.doku.sdkocov2.utils.SDKUtils;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 /**

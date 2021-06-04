@@ -8,8 +8,6 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +19,10 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.doku.sdkocov2.BaseSDKOCO;
 import com.doku.sdkocov2.DirectSDK;
 import com.doku.sdkocov2.R;
@@ -33,8 +35,10 @@ import com.doku.sdkocov2.utils.ExpiryDateFormatWatcher;
 import com.doku.sdkocov2.utils.FourDigitCardFormatWatcher;
 import com.doku.sdkocov2.utils.SDKConnections;
 import com.doku.sdkocov2.utils.SDKUtils;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;

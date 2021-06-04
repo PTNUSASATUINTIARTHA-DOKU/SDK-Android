@@ -4,9 +4,10 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import com.doku.sdkocov2.utils.SDKConnections;
+
 import com.doku.sdkocov2.utils.SDKUtils;
 import com.doku.sdkocov2.utils.TLSSocketFactory;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -19,6 +20,7 @@ import java.net.URLEncoder;
 import java.net.UnknownHostException;
 import java.security.cert.X509Certificate;
 import java.util.Map;
+
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
@@ -56,10 +58,10 @@ public class ApiConnection {
                 try {
                     X509TrustManager trustAllCerts = new X509TrustManager() {
                         @Override
-                        public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {}
+                        public void checkClientTrusted(X509Certificate[] chain, String authType) {}
 
                         @Override
-                        public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {
+                        public void checkServerTrusted(X509Certificate[] chain, String authType) {
                             for (X509Certificate cert : chain) {
                                 System.out.println(_PREFIX + " " + cert.getIssuerDN().getName() + " " + cert.getSubjectDN().getName());
                             }
@@ -75,8 +77,8 @@ public class ApiConnection {
                         }
 
                         @Override
-                        public java.security.cert.X509Certificate[] getAcceptedIssuers() {
-                            return new java.security.cert.X509Certificate[0];
+                        public X509Certificate[] getAcceptedIssuers() {
+                            return new X509Certificate[0];
                         }
                     };
 

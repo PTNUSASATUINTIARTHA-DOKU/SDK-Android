@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.util.Log;
 import android.widget.TextView;
+
 import java.security.MessageDigest;
 import java.util.Random;
 

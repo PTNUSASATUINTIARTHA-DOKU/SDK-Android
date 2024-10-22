@@ -11,6 +11,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -434,6 +435,7 @@ public class CCPayment extends Fragment implements iSDKback {
                             DirectSDK.paymentItems.getDataMerchantChain(), DirectSDK.paymentItems.getDataBasket(),
                             getPhoneNumber, getEmail, DirectSDK.paymentItems.getDataWords(), DirectSDK.paymentItems.getDataSessionID(), DirectSDK.paymentItems.getDataImei());
                 }
+                Log.d("MAIN ACTIVITY", "REQUEST BODY : "+dataJson);
 
                 ContentValues data = new ContentValues();
                 data.put("data", dataJson);

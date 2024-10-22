@@ -13,21 +13,42 @@ import java.util.ArrayList;
 /**
  * Created by zaki on 2/17/16.
  */
+@Deprecated
 public class DirectSDK {
 
+    @Deprecated
     public static Context context;
+
+    @Deprecated
     public static PaymentItems paymentItems;
+
+    @Deprecated
     public static WalletLoginModel loginModel = new WalletLoginModel();
+
+    @Deprecated
     public static iPaymentCallback callbackResponse;
+
+    @Deprecated
     public static UserDetails userDetails = new UserDetails();
+
+    @Deprecated
     public static LayoutItems layoutItems = new LayoutItems();
+
+    @Deprecated
     public static int posMenu = 0;
+
+    @Deprecated
     public static String jsonResponse;
+
+    @Deprecated
     public boolean dataNotValid = false;
+
+    @Deprecated
     ArrayList<String> errorList = new ArrayList<>();
 
     public DirectSDK() {}
 
+    @Deprecated
     private boolean checkDataValidation() {
         boolean cancel = false;
         try {
@@ -89,6 +110,7 @@ public class DirectSDK {
         return false;
     }
 
+    @Deprecated
     public void getResponse(iPaymentCallback callback, Context context) {
         this.context = context;
         callbackResponse = callback;
@@ -108,18 +130,22 @@ public class DirectSDK {
         }
     }
 
+    @Deprecated
     public void setCart_details(PaymentItems cardDetails) {
         this.paymentItems = cardDetails;
     }
 
+    @Deprecated
     public PaymentItems getPaymentItems() {
         return this.paymentItems;
     }
 
+    @Deprecated
     public void setPaymentChannel(int posMenu) {
         this.posMenu = posMenu;
     }
 
+    @Deprecated
     public void setLayout(LayoutItems itemDetails) {
         this.layoutItems = itemDetails;
     }

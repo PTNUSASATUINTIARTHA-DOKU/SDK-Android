@@ -29,12 +29,26 @@ import java.io.InputStream;
  * Created by zaki on 2/25/16.
  */
 public class BaseDokuWalletActivity extends FragmentActivity {
+
+    @Deprecated
     public static ImageView backButton;
+
+    @Deprecated
     public static CountDownTimer timeoutTimer;
+
+    @Deprecated
     TextView toolbarValue, dokuName;
+
+    @Deprecated
     ImageView profileView;
+
+    @Deprecated
     Bundle bundleState;
+
+    @Deprecated
     boolean sessionExpired = false;
+
+    @Deprecated
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
@@ -72,6 +86,7 @@ public class BaseDokuWalletActivity extends FragmentActivity {
         selectItem(0);
     }
 
+    @Deprecated
     private void selectItem(int position) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment fragment = null;

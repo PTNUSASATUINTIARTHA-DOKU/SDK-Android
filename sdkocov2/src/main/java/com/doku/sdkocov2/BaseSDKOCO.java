@@ -18,9 +18,16 @@ import com.doku.sdkocov2.utils.SDKUtils;
 /**
  * Created by zaki on 2/17/16.
  */
+@Deprecated
 public class BaseSDKOCO extends FragmentActivity {
+
+    @Deprecated
     public static ImageView backButton;
+
+    @Deprecated
     Bundle bundle;
+
+    @Deprecated
     Bundle bundleState;
 
     @Override
@@ -45,6 +52,7 @@ public class BaseSDKOCO extends FragmentActivity {
         }
     }
 
+    @Deprecated
     private void selectItem(int position) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment fragment;

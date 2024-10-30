@@ -1,5 +1,8 @@
 # SDK-Android
 
+⚠️ *Deprecation Notice*: This SDK is now deprecated and will no longer be maintained. For future integrations, please refer to our [new integration guide](https://developers.doku.com/accept-payment/doku-checkout/integration-guide) for using WebView with DOKU Checkout. We highly recommend transitioning to this updated method to ensure continued support and access to the latest features.
+
+
 The DOKU Mobile SDK enables you to accept payments from customers who make a purchase on mobile devices through your Android application. 
 
 ## Payment Channel Avalaible at Android SDK ##

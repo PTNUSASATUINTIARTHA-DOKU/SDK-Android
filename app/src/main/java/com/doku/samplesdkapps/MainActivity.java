@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         paymentItems.setDataCurrency("360");
         paymentItems.setDataAmount("15000.00");
         paymentItems.setDataWords(AppsUtil.SHA1("15000.00" + "3019" + "Z13iYrqTb78J" + invoiceNumber + 360 + deviceID));
-        paymentItems.setPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAudXdaD8Z57GQ445NnzU8UKvfMFeXeBCF9KdiyfDIr74uKy7gtQS45CiQiN+4d8HbZvDI7/Q6EpGleXu5JYKrhEVGqMHptsWAvNKEIBBeKXcuxzA4f8vbORHU8WZJ5mdNQ/QIOA/Q+WT1njt2NehKQMFqh92/oqFij5eByTuF8dk62btjPJOdNGlpucH0OefPfDtbfYzIZBDsbqG1TbzFxPFK58MQ5jDhqjk7/JBpbh4aCf/z22XDoa87d2hd5rnGtsXqLIo5nG8PuMVfG2UwlvSbVowCOLCUwa0ZHEklnE4e5TqGoGBUE6X+6EDuA4ZwpOA77gRBu6ceDoMDnWnL7QIDAQAB");
+        paymentItems.setPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk621Cyo9AzzjG3zLbXXpeDL8PwW2lZMHv9Y0mlv8oLB6Z4tZQ66cFrPFl/6wgMI6LxT6vtUdfto95WDOxoaGtC4mT2bFS0Y3t6pfpUupjKCA3A/XYA+mRQl0nsZwA8GZbI39wUsdEmOF8S2Se7lFLfoyFD4mdXu2By9Pg3XlLhbPxDUgSHzxPpxZYcFQ4OnS28hfeQEMvqANftbF8GBuvrpOzfg6U//qcpyPdNerFNJht1/+agbMXLhp8VXsyFz/yd+ih3hFDTDvTjc1BtvIW7SDzjD1oNKxfz5eHYMFhIgFL8atL+EXbZJgBOUisPMZSMDk8DUxr6Fxje4tRYUHEwIDAQAB");
         paymentItems.setDataMerchantCode("3019");
         paymentItems.setDataEmail(emailInput.getText().toString());
         paymentItems.setDataMerchantChain("NA");
@@ -297,16 +297,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //paymentItems.setPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAudXdaD8Z57GQ445NnzU8UKvfMFeXeBCF9KdiyfDIr74uKy7gtQS45CiQiN+4d8HbZvDI7/Q6EpGleXu5JYKrhEVGqMHptsWAvNKEIBBeKXcuxzA4f8vbORHU8WZJ5mdNQ/QIOA/Q+WT1njt2NehKQMFqh92/oqFij5eByTuF8dk62btjPJOdNGlpucH0OefPfDtbfYzIZBDsbqG1TbzFxPFK58MQ5jDhqjk7/JBpbh4aCf/z22XDoa87d2hd5rnGtsXqLIo5nG8PuMVfG2UwlvSbVowCOLCUwa0ZHEklnE4e5TqGoGBUE6X+6EDuA4ZwpOA77gRBu6ceDoMDnWnL7QIDAQAB");
         //paymentItems.setDataMerchantCode("3019");
 
-        paymentItems.setDataWords(AppsUtil.SHA1("15000.00" + "5262" + "zqH26B7cYo0J" + invoiceNumber + 360 + deviceID));
-        paymentItems.setPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAivRSxN2wgd0ienmdEs3ZiBbmsC9Wul1cpIb5PJbR0cwSy4HDoX6UeLYkM4IAwKaVkx5L52tNYn1gBDaK3BWvlhQ97z7olKmRjTNYaQSkY9I+KyQ9zsjJIWAkVsVHBxb1GV5rx6KaRW84ieLPy/ds5snPcTUyRkrnHVWRGSw7fA/0b4hEgRWRXKW2VdSkqswo84PrB3xo1Dx/lJM3TNHjmXO4quM70s6RfHnKfbQLm8BdQjYQAzwNcb2LnO1xYZ33zANy9LE6D/VHdl6R8eCH9EJPNc+n+G/4UPoJIQ7fKs1DOwEQsPIJdoCGEXL4KsyEOdMCAfnQgmHyjW7vEg2Q/wIDAQAB");
-        paymentItems.setDataMerchantCode("5262");
+        paymentItems.setDataWords(AppsUtil.SHA1("15000.00" + "2787" + "WQq48Xx8fp1Q" + invoiceNumber + 360 + deviceID));
+        paymentItems.setPublicKey("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk621Cyo9AzzjG3zLbXXpeDL8PwW2lZMHv9Y0mlv8oLB6Z4tZQ66cFrPFl/6wgMI6LxT6vtUdfto95WDOxoaGtC4mT2bFS0Y3t6pfpUupjKCA3A/XYA+mRQl0nsZwA8GZbI39wUsdEmOF8S2Se7lFLfoyFD4mdXu2By9Pg3XlLhbPxDUgSHzxPpxZYcFQ4OnS28hfeQEMvqANftbF8GBuvrpOzfg6U//qcpyPdNerFNJht1/+agbMXLhp8VXsyFz/yd+ih3hFDTDvTjc1BtvIW7SDzjD1oNKxfz5eHYMFhIgFL8atL+EXbZJgBOUisPMZSMDk8DUxr6Fxje4tRYUHEwIDAQAB");
+        paymentItems.setDataMerchantCode("2787");
 
         paymentItems.setDataMerchantChain("NA");
         paymentItems.setDataSessionID(String.valueOf(AppsUtil.nDigitRandomNo(9)));
         paymentItems.setDataTransactionID(invoiceNumber);
         paymentItems.setDataImei(deviceID);
         paymentItems.setMobilePhone("08123123112");
-        paymentItems.setDataEmail("JhonDoe@doku.com");
+        paymentItems.setDataEmail("jhondoe@doku.com");
         paymentItems.isProduction(false);
         return paymentItems;
     }

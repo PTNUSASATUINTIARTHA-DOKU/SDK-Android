@@ -1,13 +1,17 @@
 package com.doku.sdkocov2;
 
 import android.app.Application;
-import android.test.ApplicationTestCase;
+import androidx.test.core.app.ApplicationProvider;
+import org.junit.Test;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
  */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+public class ApplicationTest {
+    @Test
+    public void testApplicationLaunch() {
+        Application application = ApplicationProvider.getApplicationContext();
+        assertNotNull(application);
     }
 }
